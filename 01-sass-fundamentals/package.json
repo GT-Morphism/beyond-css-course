@@ -1,0 +1,15 @@
+{
+  "name": "01-sass-fundamentals",
+  "version": "1.0.0",
+  "description": "First Module of the BeyondCSS Course",
+  "main": "index.js",
+  "scripts": {
+    "watch-ch": "sass --watch 01-challenges/sass/style.scss 01-challenges/css/style.css"
+  },
+  "keywords": [],
+  "author": "Giuseppe Turturiello",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
