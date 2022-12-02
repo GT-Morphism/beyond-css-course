@@ -1,7 +1,157 @@
-.primary-article {
-  padding: 3rem 1rem;
+// ! Challenge 1
 
-  .title {
-    font-size: 5rem;
+// .primary-article {
+//   padding: 3rem 1rem;
+
+//   .title {
+//     font-size: 5rem;
+
+//     span {
+//       color: red;
+//     }
+//   }
+// }
+
+// .pointing-list {
+//   margin: 2rem 0;
+
+//   li {
+//     padding-left: 0.5rem;
+
+//     &::marker {
+//       content: "👍";
+//     }
+//   }
+// }
+
+// ! Challenge 2
+$clr-primary-400: #3f637d;
+$clr-primary-500: #2b4355;
+$clr-secondary-400: #4c4171;
+$clr-secondary-500: #2b2541;
+$clr-accent-400: #efca5d;
+$clr-accent-500: #d1a215;
+
+// body {
+//   margin: 4rem;
+//   font: {
+//     size: 1.25rem;
+//     family: system-ui, sans-serif;
+//   }
+//   text-align: center;
+// }
+
+// .btn {
+//   display: inline-block;
+//   padding: 1em 2em;
+//   color: white;
+//   cursor: pointer;
+//   border: 0;
+//   text-decoration: none;
+//   text-transform: uppercase;
+
+//   &__primary {
+//     background-color: $clr-primary-400;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $clr-primary-500;
+//     }
+//   }
+
+//   &__secondary {
+//     background: $clr-secondary-400;
+
+//     &:hover,
+//     &:focus {
+//       background: $clr-secondary-500;
+//     }
+//   }
+
+//   &__accent {
+//     background: $clr-accent-400;
+//     color: black;
+
+//     &:hover,
+//     &:focus {
+//       background: $clr-accent-500;
+//     }
+//   }
+// }
+
+// ! Challenge 3
+body {
+  margin: 4rem 0 0;
+  font: {
+    size: 1.25rem;
+    family: system-ui, sans-serif;
+  }
+  text-align: center;
+}
+
+section {
+  padding-block: 3rem;
+}
+
+.container {
+  width: min(100% - 4rem, 50rem);
+  margin-inline: auto;
+}
+
+.surface-primary {
+  background: $clr-primary-400;
+  color: white;
+}
+
+.surface-secondary {
+  background: $clr-secondary-400;
+  color: white;
+}
+
+.surface-accent {
+  background: $clr-accent-400;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  .surface-primary &,
+  .surface-secondary & {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .surface-accent & {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background: inherit;
+    color: inherit;
+    outline: 2px solid currentColor;
+  }
+}
+
+.text-subdued {
+  font-size: 1rem;
+
+  .surface-primary & {
+    opacity: 0.8;
+  }
+
+  .surface-secondary & {
+    opacity: 0.7;
+  }
+
+  .surface-accent & {
+    opacity: 0.6;
   }
 }
