@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch-ch1": "sass --watch 01-challenges/sass/style.scss 01-challenges/css/style.css",
-    "watch-ch2": "sass --watch 01-challenges/sass/variable-challenge.scss 01-challenges/css/variable-challenge.css"
+    "watch-ch2": "sass --watch 01-challenges/sass/variable-challenge.scss 01-challenges/css/variable-challenge.css",
+    "watch-ch3": "sass --watch 01-challenges/sass/mixins-challenge.scss 01-challenges/css/mixins-challenge.css"
   },
   "keywords": [],
   "author": "Giuseppe Turturiello",
